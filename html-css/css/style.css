@@ -1,3 +1,44 @@
+:root{
+    --couleur_fond: #f0f0f0;
+    --couleur_texte_principal: #333333;
+    --couleur_liens_boutons_hover: #3b82f6;
+    --couleur_fond_boutons: #e0e0e0;
+    --couleur_elemnt_graph_mineur_etchamps_cible: #facc15;
+
+    --font_titre_principal: 'Montserrat', Montserrat, ;
+    --font_titres: 'Nunito Sans', ;
+    --font_texte_principal: 'Open Sans', ;
+}
+
+body{
+    background-color: var(--couleur_fond);
+    font-family: var(--font_texte_principal);
+}
+
+h1{
+    font-family: var(--font_titre_principal);
+}
+
+h2, h3, h4, h5, h6{
+    font-family: var(--font_titres);
+}
+
+*{
+    color: var(--couleur_texte_principal)
+}
+
+button{
+    background-color: var(--couleur_fond_boutons);
+}
+
+a:hover, button:hover{
+    color: var(--couleur_liens_boutons_hover);
+}
+
+input, textarea{
+    outline-color: var(--couleur_elemnt_graph_mineur_etchamps_cible);
+}
+
 h2{
     text-align: center;
 }
