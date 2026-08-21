@@ -8,11 +8,11 @@
 </head>
 <body>
     <h2>Introduction</h2>
+
     <h2>Pourquoi apprendre HTML/CSS ?</h2>
+
     <h2>Les balises de base</h2>
-    <p>Balises de base : 
-        <pre><code>&lt;h1&gt;, &lt;p&gt;, &lt;a&gt;, &lt;img&gt;, &lt;ul&gt;, &lt;li&gt;, etc.</code></pre>
-    </p>
+
     <h3>&lt;h1&gt;</h3>
     <p>La balise &lt;h1&gt; est utilisé pour le titres de nos sections. 
         Il y'a 6 niveaux en tout de &lt;h1&gt; à &lt;h6&gt;. &lt;h1&gt; correspond au titre principale de notre section. 
@@ -42,30 +42,44 @@
 
     <h3>&lt;a&gt;</h3>
     <p>La balise &lt;a&gt; sert pour les liens. On peut l'utiliser de cette facon : 
-        <pre><code>&lt;a href="https://www.wikipedia.org/"&gt;Lien qui conduit sur la page wikipedia&lt;/a&gt;</code></pre></p>
-        <p>Ce qui donne : <a href="https://www.wikipedia.org/">Lien qui conduit sur la page wikipedia</a>.</p>
-        <p>href correspond au lien ou on veut envoyer l'utilisateur, dans ce cas, wikipedia. 
-            Il y'a toutes fois des règles de base à respecter lorsque l'on utilise la balise &lt;a&gt.
-            En général, lorsque l'on veut envoyer l'utilisateur sur une autre page du même site, 
-            on utilise la méthode du dessus. Mais lorsque l'on veut les envoyer sur un autre site, 
-            il est d'usage d'ouvrir le lien dans un autre onglet pour éviter de surprendre l'utilisateur et 
-            de lui faire perdre sa navigation (comme vous l'avez surement était avec l'éxemple du dessus !). 
-            Dans ce cas, on utilise : </p>
-        <p><pre><code>&lt;a href="https://www.wikipedia.org/" target="_blank"&gt;Lien externe wikipedia&lt;/a&gt;</code></pre></p>
-        <p>Ce qui nous donne : <a href="https://www.wikipedia.org/" target="_blank">Lien externe wikipedia</a>.</p>
-        <p>Cette méthode est beacoup plus user friendly, et permet à l'utilisateur de reprendre là où il en était
-            une fois qu'il à fini de consulter le site externe. Le target="_blank" est ce qui nous permet de dire que l'on
-            veut ouvrir ce lien dans un nouvel onglet.
-        </p>
+    <pre><code>&lt;a href="https://www.wikipedia.org/"&gt;Lien qui conduit sur la page wikipedia&lt;/a&gt;</code></pre></p>
+    <p>Ce qui donne : <a href="https://www.wikipedia.org/">Lien qui conduit sur la page wikipedia</a>.</p>
+    <p>href correspond au lien ou on veut envoyer l'utilisateur, dans ce cas, wikipedia. 
+        Il y'a toutes fois des règles de base à respecter lorsque l'on utilise la balise &lt;a&gt.
+        En général, lorsque l'on veut envoyer l'utilisateur sur une autre page du même site, 
+        on utilise la méthode du dessus. Mais lorsque l'on veut les envoyer sur un autre site, 
+        il est d'usage d'ouvrir le lien dans un autre onglet pour éviter de surprendre l'utilisateur et 
+        de lui faire perdre sa navigation (comme vous l'avez surement était avec l'éxemple du dessus !). 
+        Dans ce cas, on utilise : </p>
+    <p><pre><code>&lt;a href="https://www.wikipedia.org/" target="_blank"&gt;Lien externe wikipedia&lt;/a&gt;</code></pre></p>
+    <p>Ce qui nous donne : <a href="https://www.wikipedia.org/" target="_blank">Lien externe wikipedia</a>.</p>
+    <p>Cette méthode est beacoup plus user friendly, et permet à l'utilisateur de reprendre là où il en était
+        une fois qu'il à fini de consulter le site externe. Le target="_blank" est ce qui nous permet de dire que l'on
+        veut ouvrir ce lien dans un nouvel onglet.
+    </p>
 
     <h3>&lt;img&gt;</h3>
+    <p>La balise &lt;img&gt; est ce que l'on utilise pour afficher des images. On peut l'utiliser pour afficher 
+        des images locales, ou des images d'autres sites. Voici une image que nous avons dans le dossier images de ce 
+        site : <pre><code>&lt;img src="images/posters-smiley-cool.jpg" alt="Smiley avec des lunettes de soleil donnant un thumbs up."&gt;</code></pre></p>
+    <p>Ce qui nous donne : <img src="images/posters-smiley-cool.jpg" alt="Smiley avec des lunettes de soleil donnant un thumbs up."></p>
+    <p>Et voici une image que nous avons récupéré d'un autre site : <pre><code>&lt;img src="https://picsum.photos/200" alt="Image aléatoire pris du site lorempicsum."&gt;</code></pre></p>
+    <p>Ce qui nous donne <img src="https://picsum.photos/200" alt="Image aléatoire pris du site lorempicsum."></p>
+    <p>Le src= est le lien de l'image que ce soit local ou externe. 
+        Si l'image est locale, le lien de l'image doit soit être en relation avec la page html 
+        (nous avons un dossier images qui ce trouve au même niveau que notre fichier html, donc : images/posters-smiley-cool.jpg), 
+        ou doit être en absolue (le chemin entier pour arriver sur notre image).</p>
+    <p>Attention, il y'a toutefois une règles important à respecter quand on utilises les balises &lt;img&gt;. Le alt.</p>
+    <p>Le alt, est un attribut important de la balise &lt;img&gt;. 
+        Il s'agit de texte qui décrit l'image. 
+        Il est utile pour ceux qui utilise un lecteur d'écran ou si l'image ne se charge pas.</p>
 
     <h3>&lt;ul&gt;</h3>
 
     <h3>&lt;li&gt;</h3>
 
     <h2>Tips & bonnes pratiques</h2>
-    
+
     <h2>Contact</h2>
     <p>Des questions? N'hésitez pas à nous contacter !</p>
     <p>Prénom : <input type="text"></p>
